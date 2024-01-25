@@ -4,6 +4,7 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set clipboard=unnamed")
+vim.cmd("set number")
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
@@ -29,3 +30,7 @@ keymap.set('n', 'sh', '<C-w>h', opts)
 keymap.set('n', 'sk', '<C-w>k', opts)
 keymap.set('n', 'sj', '<C-w>j', opts)
 keymap.set('n', 'sl', '<C-w>l', opts)
+
+-- File management
+keymap.set('n', '<C-s>', ':wa<CR>', opts)
+keymap.set('n', '<leader>nf', ':e <cfile>', opts)
