@@ -39,3 +39,6 @@ keymap.set('n', '<leader>nf', ':e <cfile>', opts)
 
 -- Paste remap
 keymap.set('n', '<leader>p', "\"_dP", opts)
+
+-- Search
+keymap.set('n', '<leader>h', ':nohlsearch<CR>')

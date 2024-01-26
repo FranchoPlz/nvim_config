@@ -7,7 +7,7 @@ return   {
     "MunifTanjim/nui.nvim",
   },
   config = function()
-    vim.keymap.set('n', '<C-b>', ':Neotree filesystem reveal left<CR>', {})
+    vim.keymap.set('n', '<C-b>', ':Neotree toggle<CR>', {})
     vim.api.nvim_create_autocmd("VimEnter", {
       pattern = "*",
       group = vim.api.nvim_create_augroup("NeotreeOnOpen", { clear = true }),
