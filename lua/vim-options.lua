@@ -15,6 +15,8 @@ keymap.set('n', '<F5>', ':below 10sp | terminal<CR>', opts)
 keymap.set('t', '<Esc>', [[<C-\><C-n>]],opts)
 keymap.set({'t', 'n'}, '<A-j>', [[<C-\><C-n><C-w>j]], opts)
 keymap.set({'t', 'n'}, '<A-k>', [[<C-\><C-n><C-w>k]], opts)
+keymap.set({'t', 'n'}, '<A-l>', [[<C-\><C-n><C-w>l]], opts)
+keymap.set({'t', 'n'}, '<A-h>', [[<C-\><C-n><C-w>h]], opts)
 
 -- Tabs keymaps
 keymap.set('n', '<C-n>', ':tabedit<CR>', opts)
@@ -34,3 +36,6 @@ keymap.set('n', 'sl', '<C-w>l', opts)
 -- File management
 keymap.set('n', '<C-s>', ':wa<CR>', opts)
 keymap.set('n', '<leader>nf', ':e <cfile>', opts)
+
+-- Paste remap
+keymap.set('n', '<leader>p', "\"_dP", opts)

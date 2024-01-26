@@ -8,6 +8,16 @@ return   {
   },
   config = function()
     vim.keymap.set('n', '<C-b>', ':Neotree filesystem reveal left<CR>', {})
+    vim.api.nvim_create_autocmd("VimEnter", {
+      pattern = "*",
+      group = vim.api.nvim_create_augroup("NeotreeOnOpen", { clear = true }),
+      once = true,
+      callback = function(_)
+        if vim.fn.argc() == 0 then
+          vim.cmd("Neotree")
+        end
+      end,
+    })
   end
 }
 
