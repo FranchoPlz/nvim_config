@@ -15,6 +15,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = { "williamboman/mason.nvim" },
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})

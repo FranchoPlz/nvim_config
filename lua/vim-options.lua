@@ -4,7 +4,10 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set clipboard=unnamed")
+-- Set numbered and relative line numbers
 vim.cmd("set nu rnu")
+-- Set powershell as default term ( !IMPORTANT if not using windows )
+vim.cmd("set shell=powershell")
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
