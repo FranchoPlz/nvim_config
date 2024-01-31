@@ -5,6 +5,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set clipboard=unnamed")
 vim.cmd("set nocompatible")
+vim.cmd("set nowrap")
 vim.cmd("syntax enable")
 vim.cmd("filetype plugin on")
 -- Set numbered and relative line numbers
