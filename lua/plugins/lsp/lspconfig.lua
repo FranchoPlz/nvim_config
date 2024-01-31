@@ -53,8 +53,7 @@ return {
 		end
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
-
-		local easy_config_servers = {
+		local lsps = {
 			"tsserver",
 			"html",
 			"cssls",
@@ -63,9 +62,10 @@ return {
 			"graphql",
 			"prismals",
 			"pyright",
+      "clangd",
 		}
 
-		for _, lsp in pairs(easy_config_servers) do
+		for _, lsp in pairs(lsps) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
